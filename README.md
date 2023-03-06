@@ -13,32 +13,32 @@
 
 Possui 6 rotas:
 
-#### ``/``
+#### Rota ``/``
 
 Retorna um pequeno tutorial de como funciona.
 
-#### ``/register``
+#### Rota ``/register``
 
 Rota para cadastrar a organização ou website que está usando.
 Deve conter os parâmetros de cadastro: ``nome da pessoa, nome da organização, email da organização, usuário, senha``
 
-#### ``/login``
+#### Rota ``/login``
 
 Rota para fazer login na API. Vc recebe um token que será validado de tempos em tempos até expirar. Tempo máximo de 24h.
 Deve conter os parâmetros de login: ``usuário, senha``
 
-#### ``/add``
+#### Rota ``/add``
 
 Rota para adicionar novos emails para a lista de newsletter.
 Deve conter os parâmetros de adição: ``nome do dono, email, status ativo``
 
-#### ``/remove``
+#### Rota ``/remove``
 
 Rota para remover um registro do banco.
 Deve conter os parâmetros de remoção: ``nome do dono ou email``
 Tenha em mente que essa rota removerá qualquer ocorrência dos parâmetros passados. Se remover por nome e houverem 2 registros de "Fulado de Tal", com emails diferentes como ``{"nome": "Fulado de Tal", "email","email1@email.com"}`` e ``{"nome": "Fulado de Tal", "email","email2@email.com"}``, ambos serão removidos. 
 
-#### ``/list``
+#### Rota ``/list``
 
 Rota que lista todos os emails para o usuário logado.
 Deve conter os parâmetros de listagem: ``usuario ou token (automatico)``

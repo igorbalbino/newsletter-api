@@ -1,0 +1,33 @@
+{
+  "name": "newsletter-api",
+  "version": "1.0.0",
+  "description": "API que recebe dados de email de um usuario cadastrado e grava emails para lista de newsletter em nodejs com express.",
+  "main": "index.js",
+  "scripts": {
+    "test": "test",
+    "dev": "ts-node-dev --respawn --transpile-only src/app.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/igorbalbino/newsletter-api.git"
+  },
+  "keywords": [
+    "api",
+    "newsletter",
+    "mongodb"
+  ],
+  "author": "Igor do Espírito Santo Balbino",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/igorbalbino/newsletter-api/issues"
+  },
+  "homepage": "https://github.com/igorbalbino/newsletter-api#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^4.9.5"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.17"
+  }
+}
